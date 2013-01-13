@@ -1,4 +1,4 @@
-1CREATE TABLE Furnizor (
+CREATE TABLE Furnizor (
   idFurnizor INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   denFurnizor TEXT NULL,
   adresaFurnizor TEXT NULL,
