@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="ComputerServicePUXX" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>ent.Clienti</class>
+    <class>ent.Comenzi</class>
+    <class>ent.Furnizori</class>
+    <class>ent.IntrariMateriale</class>
+    <class>ent.Materiale</class>
+    <class>ent.MaterialeComanda</class>
+    <class>ent.Salariati</class>
+    <shared-cache-mode>ALL</shared-cache-mode>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/computer_service"/>
+      <property name="javax.persistence.jdbc.password" value="costin"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="eclipselink.ddl-generation" value="create-tables"/>
+    </properties>
+  </persistence-unit>
+</persistence>
